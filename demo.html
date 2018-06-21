@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<span style="display: inline-block;height:40px;width:100px;">aaa</span><span style="display: inline-block;height:40px;width:100px;">212222</span>
+     <input type="button"  value="ddd" onclick="aa()">
+
+<div style="width:100%;height:50px;display: -webkit-box;">
+
+    <div style="width:50%;height:50px;color:red;">11111111</div>
+    <div style="width:50%;height:50px;color:blue;display:none;">222222222</div>
+    <div style="width:50%;height:50px;color:beige;">333333333</div>
+    <div style="width:50%;height:50px;color:burlywood;">444444444</div>
+    <div style="width:50%;height:50px;color:black;">55555555</div>
+
+</div>
+</body>
+<script>
+    function aa(){
+        var a=[{"skt":"1","id":"1"},{"skt":"2","id":"2"}];
+        var b=[{"skt":"1","id":"1"},{"skt":"2","id":"2"},{"skt":"3","id":"3"}];
+        for(var i= b.length-1;i>=0;i--){
+            for(var j= 0,len= a.length;j<len;j++){
+                if(b[i].id===a[j].id){
+                    b.splice(i,1);
+                    break;
+                }
+            }
+        }
+        console.log(b);
+    }
+
+</script>
+</html>
